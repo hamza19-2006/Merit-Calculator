@@ -20,11 +20,11 @@ col1, col2 = st.columns(2)
 
 with col1:
     M_mar = st.number_input("Matric Obtained Marks", min_value=0.0, step=1.0)
-    M_total = st.number_input("Matric Total Marks", min_value=1.0, value=1100.0, step=1.0)
+    M_total = st.number_input("Matric Total Marks", min_value=1.0, value=1200.0, step=1.0)
 
 with col2:
     F_mar = st.number_input("FSc/ICS Part-1 Obtained Marks", min_value=0.0, step=1.0)
-    F_total = st.number_input("FSc/ICS Part-1 Total Marks", min_value=1.0, value=510.0, step=1.0)
+    F_total = st.number_input("FSc/ICS Part-1 Total Marks", min_value=1.0, value=560.0, step=1.0)
 
 # Calculate percentages safely
 M_Per = (M_mar / M_total) * 100 if M_total > 0 else 0
